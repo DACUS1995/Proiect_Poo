@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
+
    QObject::connect(ui->pushButton_1,SIGNAL(clicked()),this,SLOT(change_text()));
 }
 
@@ -23,7 +24,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::change_text()
 {
-  QString txt = "Ai apasat pe buton!!"
+  QString txt = "Ai apasat pe buton!!";
   ui->textEdit->setText(txt);
 
 }
