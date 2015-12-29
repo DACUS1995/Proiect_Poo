@@ -31,7 +31,7 @@ private:
 private slots:
     void change_text();
     void makePlot();
-
+    void savePlot();
     void horzScrollBarChanged(int value);
     void vertScrollBarChanged(int value);
     void xAxisChanged(QCPRange range);

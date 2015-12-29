@@ -13,8 +13,12 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
 
 
-   QObject::connect(ui->pushButton_1,SIGNAL(clicked()),this,SLOT(change_text()));
+  // QObject::connect(ui->pushButton_1,SIGNAL(clicked()),this,SLOT(change_text()));
     MainWindow::makePlot();
+
+
+    QObject::connect(ui->pushButton_1,SIGNAL(clicked()),this,SLOT(savePlot()));
+     MainWindow::makePlot();
 
     setupPlot();
 
@@ -43,6 +47,13 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::savePlot()
+{
+    ui->plot->grab().save("plot.png");
+    QString txt = "Imaginea a fost salvata";
+    ui->textEdit->setText(txt);
+
+}
 
 void MainWindow::change_text()
 {
@@ -59,14 +70,26 @@ void MainWindow::setupPlot()
   ui->plot->graph()->setBrush(QBrush(QColor(0, 0, 255, 20)));
   ui->plot->addGraph();
   ui->plot->graph()->setPen(QPen(Qt::red));
-  QVector<double> x(500), y0(500), y1(500);
+  QVector<double> x(500), y0(500), y1(500), y(500);
+
+  //Plot Formula Tony
+  double alpha = 2.50595298849786;
+  double gama = 7;
   for (int i=0; i<500; ++i)
   {
-    x[i] = (i/499.0-0.5)*10;
-    y0[i] = qExp(-x[i]*x[i]*0.25)*qSin(x[i]*5)*5;
-    y1[i] = qExp(-x[i]*x[i]*0.25)*5;
+    //x[i] = (i/499.0-0.5)*10; // for left/right plotting
+    //x[i] = (i/499.0)*10;   // bigger than 0 plotting
+    //x[i] = (i/400.0)*10;
+    //y0[i] = qExp(-x[i]*x[i]*0.25)*qSin(x[i]*5)*5;
+    //y1[i] = qExp(-x[i]*x[i]*0.25)*5;
+    x[i] = i;
+      if(x[i] <= gama)
+                y[i] = 1/alpha * log(2) * pow(2,x[i]/alpha);
+      else
+                y[i] = y[i-1] - 1/alpha * log(2) *  pow(2,(13 - x[i])/(2 * alpha));
+    if(y[i] < 0) y[i] = 0;
   }
-  ui->plot->graph(0)->setData(x, y0);
+  ui->plot->graph(0)->setData(x, y);
   //ui->plot->graph(1)->setData(x, y1);
   ui->plot->axisRect()->setupFullAxesBox(true);
   ui->plot->setInteractions(QCP::iRangeDrag | QCP::iRangeZoom);
