@@ -3,7 +3,14 @@
 
 #include <QMainWindow>
 #include <QMenuBar>
+#include <QVector>
 #include "qcustomplot.h"
+#include "modelbley.h"
+#include "modelcontois.h"
+#include "modeldcmss.h"
+#include "modelolsson.h"
+#include "modelteissier.h"
+
 
 class QAction;
 class QActionGroup;
@@ -21,22 +28,50 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-
-    void setupPlot();
+    void setupPlotBley();
+    void setupPlotContois();
+    void setupPlotDcmss();
+    void setupPlotOlsson();
+    void setupPlotTeissier();
 
 private:
     Ui::MainWindow *ui;
 
 
 private slots:
-    void change_text();
-    void makePlot();
-    void savePlot();
-    void horzScrollBarChanged(int value);
-    void vertScrollBarChanged(int value);
-    void xAxisChanged(QCPRange range);
-    void yAxisChanged(QCPRange range);
+    void savePlotBley();
+    void savePlotContois();
+    void savePlotDcmss();
+    void savePlotOlsson();
+    void savePlotTeissier();
 
+    void horzScrollBarChangedBley(int value);
+    void vertScrollBarChangedBley(int value);
+    void xAxisChangedBley(QCPRange range);
+    void yAxisChangedBley(QCPRange range);
+
+    void horzScrollBarChangedContois(int value);
+    void vertScrollBarChangedContois(int value);
+    void xAxisChangedContois(QCPRange range);
+    void yAxisChangedContois(QCPRange range);
+
+    void horzScrollBarChangedDcmss(int value);
+    void vertScrollBarChangedDcmss(int value);
+    void xAxisChangedDcmss(QCPRange range);
+    void yAxisChangedDcmss(QCPRange range);
+
+    void horzScrollBarChangedOlsson(int value);
+    void vertScrollBarChangedOlsson(int value);
+    void xAxisChangedOlsson(QCPRange range);
+    void yAxisChangedOlsson(QCPRange range);
+
+    void horzScrollBarChangedTeissier(int value);
+    void vertScrollBarChangedTeissier(int value);
+    void xAxisChangedTeissier(QCPRange range);
+    void yAxisChangedTeissier(QCPRange range);
+
+    void on_actionExit_triggered();
+    void on_actionAbout_triggered();
 };
 
 #endif // MAINWINDOW_H

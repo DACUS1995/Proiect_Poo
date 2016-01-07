@@ -1,0 +1,13 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\qcustomplot.o
+./release\modeldcmss.o
+./release\model.o
+./release\modelteissier.o
+./release\modelcontois.o
+./release\modelolsson.o
+./release\modelbley.o
+./release\moc_mainwindow.o
+./release\moc_qcustomplot.o
+);

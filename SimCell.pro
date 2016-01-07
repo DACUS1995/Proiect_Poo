@@ -14,9 +14,23 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    qcustomplot.cpp
+    qcustomplot.cpp \
+    modeldcmss.cpp \
+    model.cpp \
+    modelteissier.cpp \
+    modelcontois.cpp \
+    modelolsson.cpp \
+    modelbley.cpp
 
 HEADERS  += mainwindow.h \
-    qcustomplot.h
+    qcustomplot.h \
+    modeldcmss.h \
+    model.h \
+    modelteissier.h \
+    modelcontois.h \
+    modelolsson.h \
+    modelbley.h
 
 FORMS    += mainwindow.ui
+
+RC_FILE = SimCell.rc
