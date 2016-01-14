@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui multimedia multimediawidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
@@ -20,7 +20,8 @@ SOURCES += main.cpp\
     modelteissier.cpp \
     modelcontois.cpp \
     modelolsson.cpp \
-    modelbley.cpp
+    modelbley.cpp \
+    dataloader.cpp
 
 HEADERS  += mainwindow.h \
     qcustomplot.h \
@@ -29,8 +30,12 @@ HEADERS  += mainwindow.h \
     modelteissier.h \
     modelcontois.h \
     modelolsson.h \
-    modelbley.h
+    modelbley.h \
+    dataloader.h
 
 FORMS    += mainwindow.ui
 
 RC_FILE = SimCell.rc
+
+RESOURCES += \
+    resources.qrc

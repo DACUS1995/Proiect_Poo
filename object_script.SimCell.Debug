@@ -8,6 +8,8 @@ INPUT(
 ./debug\modelcontois.o
 ./debug\modelolsson.o
 ./debug\modelbley.o
+./debug\dataloader.o
+./debug\qrc_resources.o
 ./debug\moc_mainwindow.o
 ./debug\moc_qcustomplot.o
 );

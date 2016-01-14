@@ -10,6 +10,7 @@
 #include "modeldcmss.h"
 #include "modelolsson.h"
 #include "modelteissier.h"
+#include "dataloader.h"
 
 
 class QAction;
@@ -36,6 +37,9 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    DataLoader *dataLoader;
+    QVector<double> time, velocity;
+    double volum, densitate, cantitate, timp, oxigen;
 
 
 private slots:
@@ -44,6 +48,7 @@ private slots:
     void savePlotDcmss();
     void savePlotOlsson();
     void savePlotTeissier();
+    void loadData();
 
     void horzScrollBarChangedBley(int value);
     void vertScrollBarChangedBley(int value);
@@ -72,6 +77,8 @@ private slots:
 
     void on_actionExit_triggered();
     void on_actionAbout_triggered();
+    void on_actionInitial_data_triggered();
+    void on_actionAverage_data_triggered();
 };
 
 #endif // MAINWINDOW_H

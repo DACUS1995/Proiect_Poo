@@ -1,0 +1,7 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file>images/background.gif</file>
+    <file>images/Splashscreen.png</file>
+    <file>images/UPB.gif</file>
+</qresource>
+</RCC>

@@ -6,9 +6,27 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1090</width>
-    <height>641</height>
+    <width>1078</width>
+    <height>669</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1078</width>
+    <height>669</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1078</width>
+    <height>669</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>SimCell</string>
@@ -19,8 +37,8 @@
      <rect>
       <x>0</x>
       <y>10</y>
-      <width>1071</width>
-      <height>581</height>
+      <width>1081</width>
+      <height>601</height>
      </rect>
     </property>
     <property name="currentIndex">
@@ -34,9 +52,9 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>20</y>
+        <y>12</y>
         <width>271</width>
-        <height>73</height>
+        <height>31</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
@@ -59,8 +77,8 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>420</y>
-        <width>601</width>
+        <y>500</y>
+        <width>761</width>
         <height>17</height>
        </rect>
       </property>
@@ -74,10 +92,10 @@
       </property>
       <property name="geometry">
        <rect>
-        <x>620</x>
-        <y>110</y>
+        <x>780</x>
+        <y>60</y>
         <width>20</width>
-        <height>291</height>
+        <height>431</height>
        </rect>
       </property>
       <property name="orientation">
@@ -88,9 +106,9 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>110</y>
-        <width>601</width>
-        <height>301</height>
+        <y>60</y>
+        <width>761</width>
+        <height>431</height>
        </rect>
       </property>
       <property name="sizePolicy">
@@ -100,6 +118,24 @@
        </sizepolicy>
       </property>
      </widget>
+     <widget class="QLabel" name="label_1">
+      <property name="geometry">
+       <rect>
+        <x>-4</x>
+        <y>-1</y>
+        <width>1081</width>
+        <height>581</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>label_1</zorder>
+     <zorder>layoutWidget</zorder>
+     <zorder>horizontalScrollBarDcmss</zorder>
+     <zorder>verticalScrollBarDcmss</zorder>
+     <zorder>plotDcmss</zorder>
     </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
@@ -109,9 +145,9 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>20</y>
+        <y>12</y>
         <width>271</width>
-        <height>73</height>
+        <height>31</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -131,8 +167,8 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>420</y>
-        <width>601</width>
+        <y>500</y>
+        <width>761</width>
         <height>17</height>
        </rect>
       </property>
@@ -144,9 +180,9 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>110</y>
-        <width>601</width>
-        <height>301</height>
+        <y>60</y>
+        <width>761</width>
+        <height>431</height>
        </rect>
       </property>
       <property name="sizePolicy">
@@ -159,16 +195,34 @@
      <widget class="QScrollBar" name="verticalScrollBarContois">
       <property name="geometry">
        <rect>
-        <x>620</x>
-        <y>110</y>
+        <x>780</x>
+        <y>60</y>
         <width>20</width>
-        <height>291</height>
+        <height>431</height>
        </rect>
       </property>
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>
      </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>-4</x>
+        <y>-1</y>
+        <width>1081</width>
+        <height>581</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <zorder>label_2</zorder>
+     <zorder>layoutWidget_2</zorder>
+     <zorder>horizontalScrollBarContois</zorder>
+     <zorder>plotContois</zorder>
+     <zorder>verticalScrollBarContois</zorder>
     </widget>
     <widget class="QWidget" name="tab_3">
      <attribute name="title">
@@ -178,9 +232,9 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>20</y>
+        <y>12</y>
         <width>271</width>
-        <height>73</height>
+        <height>31</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -200,8 +254,8 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>420</y>
-        <width>601</width>
+        <y>500</y>
+        <width>761</width>
         <height>17</height>
        </rect>
       </property>
@@ -213,9 +267,9 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>110</y>
-        <width>601</width>
-        <height>301</height>
+        <y>60</y>
+        <width>761</width>
+        <height>431</height>
        </rect>
       </property>
       <property name="sizePolicy">
@@ -228,16 +282,34 @@
      <widget class="QScrollBar" name="verticalScrollBarOlsson">
       <property name="geometry">
        <rect>
-        <x>620</x>
-        <y>110</y>
+        <x>780</x>
+        <y>60</y>
         <width>20</width>
-        <height>291</height>
+        <height>431</height>
        </rect>
       </property>
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>
      </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>-4</x>
+        <y>-1</y>
+        <width>1081</width>
+        <height>581</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <zorder>label_3</zorder>
+     <zorder>layoutWidget_3</zorder>
+     <zorder>horizontalScrollBarOlsson</zorder>
+     <zorder>plotOlsson</zorder>
+     <zorder>verticalScrollBarOlsson</zorder>
     </widget>
     <widget class="QWidget" name="tab_4">
      <attribute name="title">
@@ -247,9 +319,9 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>20</y>
+        <y>12</y>
         <width>271</width>
-        <height>73</height>
+        <height>31</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_5">
@@ -268,9 +340,9 @@
      <widget class="QScrollBar" name="horizontalScrollBarBley">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>420</y>
-        <width>601</width>
+        <x>20</x>
+        <y>500</y>
+        <width>751</width>
         <height>17</height>
        </rect>
       </property>
@@ -282,9 +354,9 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>110</y>
-        <width>601</width>
-        <height>301</height>
+        <y>60</y>
+        <width>761</width>
+        <height>431</height>
        </rect>
       </property>
       <property name="sizePolicy">
@@ -297,16 +369,34 @@
      <widget class="QScrollBar" name="verticalScrollBarBley">
       <property name="geometry">
        <rect>
-        <x>620</x>
-        <y>110</y>
+        <x>780</x>
+        <y>60</y>
         <width>20</width>
-        <height>291</height>
+        <height>431</height>
        </rect>
       </property>
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>
      </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>-4</x>
+        <y>-1</y>
+        <width>1081</width>
+        <height>581</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <zorder>label_4</zorder>
+     <zorder>layoutWidget_5</zorder>
+     <zorder>horizontalScrollBarBley</zorder>
+     <zorder>plotBley</zorder>
+     <zorder>verticalScrollBarBley</zorder>
     </widget>
     <widget class="QWidget" name="tab_5">
      <attribute name="title">
@@ -316,9 +406,9 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>20</y>
+        <y>12</y>
         <width>271</width>
-        <height>73</height>
+        <height>31</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_4">
@@ -330,16 +420,23 @@
         </widget>
        </item>
        <item>
-        <widget class="QTextEdit" name="textEdit_4"/>
+        <widget class="QTextEdit" name="textEdit_4">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
      <widget class="QScrollBar" name="horizontalScrollBarTeissier">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>420</y>
-        <width>601</width>
+        <x>20</x>
+        <y>500</y>
+        <width>751</width>
         <height>17</height>
        </rect>
       </property>
@@ -351,9 +448,9 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>110</y>
-        <width>601</width>
-        <height>301</height>
+        <y>60</y>
+        <width>761</width>
+        <height>431</height>
        </rect>
       </property>
       <property name="sizePolicy">
@@ -379,16 +476,34 @@
      <widget class="QScrollBar" name="verticalScrollBarTeissier">
       <property name="geometry">
        <rect>
-        <x>620</x>
-        <y>110</y>
+        <x>780</x>
+        <y>60</y>
         <width>20</width>
-        <height>291</height>
+        <height>431</height>
        </rect>
       </property>
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>
      </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>-4</x>
+        <y>-1</y>
+        <width>1081</width>
+        <height>581</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <zorder>label_5</zorder>
+     <zorder>layoutWidget_4</zorder>
+     <zorder>horizontalScrollBarTeissier</zorder>
+     <zorder>plotTeissier</zorder>
+     <zorder>verticalScrollBarTeissier</zorder>
     </widget>
    </widget>
   </widget>
@@ -397,7 +512,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1090</width>
+     <width>1078</width>
      <height>21</height>
     </rect>
    </property>
@@ -405,7 +520,14 @@
     <property name="title">
      <string>File</string>
     </property>
-    <addaction name="actionView_data"/>
+    <widget class="QMenu" name="menuData">
+     <property name="title">
+      <string>Data</string>
+     </property>
+     <addaction name="actionInitial_data"/>
+     <addaction name="actionAverage_data"/>
+    </widget>
+    <addaction name="menuData"/>
     <addaction name="actionExit"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
@@ -429,11 +551,6 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
-  <action name="actionView_data">
-   <property name="text">
-    <string>View data</string>
-   </property>
-  </action>
   <action name="actionExit">
    <property name="text">
     <string>Exit</string>
@@ -442,6 +559,16 @@
   <action name="actionAbout">
    <property name="text">
     <string>About</string>
+   </property>
+  </action>
+  <action name="actionInitial_data">
+   <property name="text">
+    <string>Initial data</string>
+   </property>
+  </action>
+  <action name="actionAverage_data">
+   <property name="text">
+    <string>Average data</string>
    </property>
   </action>
  </widget>
